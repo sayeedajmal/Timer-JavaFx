@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="622.0" style="-fx-background-color: #343D47;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Timer.Controller">
+   <children>
+      <ImageView fitHeight="96.0" fitWidth="118.0" layoutX="263.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Timer.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="95.0" layoutY="163.0" prefHeight="73.0" prefWidth="425.0" style="-fx-background-color: linear-gradient( #74b2af,#6990af); -fx-background-radius: 20px;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="133.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours" textAlignment="CENTER" />
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="186.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" />
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="247.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" />
+            <Text fx:id="timer" fill="WHITE" fontSmoothingType="LCD" layoutX="85.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40px; -fx-color: white;" text="99:99:99" textAlignment="CENTER" wrappingWidth="254.9830722808838" />
+         </children>
+      </Pane>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="236.0" layoutY="297.0" onAction="#stop" prefHeight="43.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: black; -fx-background-radius: 10px;" text="STOP !" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="498.0" layoutY="13.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: lightblue;" text="TIMER" textFill="RED">
+         <font>
+            <Font name="Lato Heavy" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
